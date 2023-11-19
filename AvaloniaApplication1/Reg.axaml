@@ -1,0 +1,126 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        x:Class="AvaloniaApplication1.Reg"
+        Title="Reg">
+    
+        <Grid 
+        
+        ShowGridLines="False"
+        ColumnDefinitions=".3* .7* .3*"
+        RowDefinitions=".3* .3* .3* .2*"
+        >
+        
+        <Image
+            
+            Grid.Column="1"
+            Grid.Row="0"
+            Source="Assets/logo.png"
+            MaxHeight="200"
+            VerticalAlignment="Bottom"
+            
+            />
+        
+        <Button
+            
+            Grid.Column="1" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"  
+            Background="Transparent" 
+            Content="Вход"
+            Click="Button_OnClick">
+         
+        </Button>
+        
+        
+        <Button
+            
+            Grid.Column="1" 
+            HorizontalAlignment="Right" 
+            VerticalAlignment="Bottom"
+            Background="Transparent"
+            Content="Регистрация">
+            
+        </Button>
+        
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="1">
+            
+            <TextBox
+                Watermark="Логин"
+                Margin="0 10 1 5"
+                FontSize="15"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Left"
+                CornerRadius="5">
+            </TextBox>
+            
+            <TextBox
+                Watermark="Пароль"
+                Margin="0 5 1 20 "
+                FontSize="15"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Left"
+                CornerRadius="5"
+                PasswordChar="*">
+            </TextBox>
+            
+            <TextBox
+                Watermark="Повторите пароль"
+                Margin="0 5 1 15"
+                FontSize="15"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Left"
+                CornerRadius="5"
+                PasswordChar="*">
+            </TextBox>
+            <Image
+                Margin="0 0 0 10 "
+                Height="200"
+                Source="Assets/captcha.png"/>
+           
+           
+               
+           
+           
+            
+            <TextBox
+            Margin="0 5 0 0"
+            Watermark="Введите капчу">
+                
+            </TextBox>
+            
+            
+        </StackPanel>
+        
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="3">
+            
+            <Button
+                Margin="0 5 0 0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Зарегистрироваться"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Background="Black"
+                Foreground="White"
+                Width="215">
+                
+            </Button>
+            
+            
+        </StackPanel>
+        
+        
+        
+        
+        
+        
+    </Grid>
+    
+</Window>
